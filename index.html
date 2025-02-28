@@ -18,6 +18,14 @@
             font-weight: 400;
             font-style: normal;
         }
+
+        .date {
+            font-size: 20px;
+        }
+
+        .date-bold {
+            font-weight: 700;
+        }
     </style>
 </head>
 
@@ -28,7 +36,7 @@
             <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
         </div>
         <div class="flex gap-14 items-center">
-            <div class="flex gap-4 bg-[#F4F7FF] py-3 px-5 rounded-full">
+            <div class="flex gap-3 bg-[#F4F7FF] py-3 px-5 rounded-full">
                 <img class="w-8 h-8" src="./assets/checkbox.png" alt="">
                 <h2 class="font-bold text-3xl">23</h2>
             </div>
@@ -39,11 +47,133 @@
     </nav>
     <main class="flex gap-6 mt-6">
         <!-- main section -->
-        <section class="bg-white h-8 w-[75%] rounded-xl">
+        <section class="bg-white h-full w-[75%] rounded-xl mb-7">
+            <!-- upper section -->
+            <div class="border-dashed border-b-2">
+                <div class="flex justify-between w-[95%] mx-auto mt-6">
+                    <div class="bg-[#F4F7FF] px-9 py-7 flex rounded-lg gap-3 items-center mb-8">
+                        <div class=" bg-white px-3 py-3 rounded-full">
+                            <img src="./assets/checkbox.png" alt="">
+                        </div>
+                        <div>
+                            <p>Task Assigned</p>
+                            <p class="text-2xl font-bold">05</p>
+                        </div>
+                    </div>
+                    <div
+                        class="flex gap-5 mb-8 pl-10 pr-40 rounded-lg items-center bg-gradient-to-r from-[#3953f8] to-[#9BA8F8]">
+                        <img src="./assets/board.png" alt="">
+                        <p class="text-[20px] text-white">Discover Something <br> New Today!</p>
+                    </div>
+                    <div id="today-date" class="bg-[#F4F7FF] flex items-center px-9 gap-4 mb-8 rounded-lg">
+                        <div class="py-3 px-3 rounded-full bg-white">
+                            <img src="./assets/calender.png" alt="">
+                        </div>
 
+                        <p class="date">Wed , <br>
+                            <span class="date-bold">Jul 28 2025 </span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- mid section -->
+            <div class="mt-8 grid grid-cols-3 gap-8 mx-6 mb-7">
+                <!-- task container -->
+                <div class="bg-[#F4F7FF] rounded-lg">
+                    <div class="border-dashed border-b-2 mx-5">
+                        <p class="px-4 py-2 w-28 ml-2 mt-4 bg-white rounded-lg">ShopEase</p>
+                        <h1 class="text-[24px] font-semibold ml-2 mt-4">Fix Mobile Button Issue</h1>
+                        <p class="mb-4 p bg-white ml-2 mr-5 text-[14px] p-5 text-neutral-400 mt-3 rounded-lg">Debug using
+                            Chrome DevTools, check for overlapping... </p>
+                    </div>
+                    <div class="flex justify-between mx-6 my-4">
+                        <div>
+                            <p class="text-[12px] text-[#00303C]">Deadline</p>
+                            <p class=" font-semibold text-[#00303C]">21 March 2025</p>
+                        </div>
+                        <button class="px-5 py-2 bg-[#3752FD] text-white rounded-lg">completed</button>
+                    </div>
+                </div>
+                <div class="bg-[#F4F7FF] rounded-lg">
+                    <div class="border-dashed border-b-2 mx-5">
+                        <p class="px-4 py-2 w-28 ml-2 mt-4 bg-white rounded-lg">ShopEase</p>
+                        <h1 class="text-[24px] font-semibold ml-2 mt-4">Fix Mobile Button Issue</h1>
+                        <p class="mb-4 p bg-white ml-2 mr-5 text-[14px] p-5 text-neutral-400 mt-3 rounded-lg">Debug using
+                            Chrome DevTools, check for overlapping... </p>
+                    </div>
+                    <div class="flex justify-between mx-6 my-4">
+                        <div>
+                            <p class="text-[12px] text-[#00303C]">Deadline</p>
+                            <p class=" font-semibold text-[#00303C]">21 March 2025</p>
+                        </div>
+                        <button class="px-5 py-2 bg-[#3752FD] text-white rounded-lg">completed</button>
+                    </div>
+                </div>
+                <div class="bg-[#F4F7FF] rounded-lg">
+                    <div class="border-dashed border-b-2 mx-5">
+                        <p class="px-4 py-2 w-28 ml-2 mt-4 bg-white rounded-lg">ShopEase</p>
+                        <h1 class="text-[24px] font-semibold ml-2 mt-4">Fix Mobile Button Issue</h1>
+                        <p class="mb-4 p bg-white ml-2 mr-5 text-[14px] p-5 text-neutral-400 mt-3 rounded-lg">Debug using
+                            Chrome DevTools, check for overlapping... </p>
+                    </div>
+                    <div class="flex justify-between mx-6 my-4">
+                        <div>
+                            <p class="text-[12px] text-[#00303C]">Deadline</p>
+                            <p class=" font-semibold text-[#00303C]">21 March 2025</p>
+                        </div>
+                        <button class="px-5 py-2 bg-[#3752FD] text-white rounded-lg">completed</button>
+                    </div>
+                </div>
+                <div class="bg-[#F4F7FF] rounded-lg">
+                    <div class="border-dashed border-b-2 mx-5">
+                        <p class="px-4 py-2 w-28 ml-2 mt-4 bg-white rounded-lg">ShopEase</p>
+                        <h1 class="text-[24px] font-semibold ml-2 mt-4">Fix Mobile Button Issue</h1>
+                        <p class="mb-4 p bg-white ml-2 mr-5 text-[14px] p-5 text-neutral-400 mt-3 rounded-lg">Debug using
+                            Chrome DevTools, check for overlapping... </p>
+                    </div>
+                    <div class="flex justify-between mx-6 my-4">
+                        <div>
+                            <p class="text-[12px] text-[#00303C]">Deadline</p>
+                            <p class=" font-semibold text-[#00303C]">21 March 2025</p>
+                        </div>
+                        <button class="px-5 py-2 bg-[#3752FD] text-white rounded-lg">completed</button>
+                    </div>
+                </div>
+                <div class="bg-[#F4F7FF] rounded-lg">
+                    <div class="border-dashed border-b-2 mx-5">
+                        <p class="px-4 py-2 w-28 ml-2 mt-4 bg-white rounded-lg">ShopEase</p>
+                        <h1 class="text-[24px] font-semibold ml-2 mt-4">Fix Mobile Button Issue</h1>
+                        <p class="mb-4 p bg-white ml-2 mr-5 text-[14px] p-5 text-neutral-400 mt-3 rounded-lg">Debug using
+                            Chrome DevTools, check for overlapping... </p>
+                    </div>
+                    <div class="flex justify-between mx-6 my-4">
+                        <div>
+                            <p class="text-[12px] text-[#00303C]">Deadline</p>
+                            <p class=" font-semibold text-[#00303C]">21 March 2025</p>
+                        </div>
+                        <button class="px-5 py-2 bg-[#3752FD] text-white rounded-lg">completed</button>
+                    </div>
+                </div>
+                <div class="bg-[#F4F7FF] rounded-lg">
+                    <div class="border-dashed border-b-2 mx-5">
+                        <p class="px-4 py-2 w-28 ml-2 mt-4 bg-white rounded-lg">ShopEase</p>
+                        <h1 class="text-[24px] font-semibold ml-2 mt-4">Fix Mobile Button Issue</h1>
+                        <p class="mb-4 p bg-white ml-2 mr-5 text-[14px] p-5 text-neutral-400 mt-3 rounded-lg">Debug using
+                            Chrome DevTools, check for overlapping... </p>
+                    </div>
+                    <div class="flex justify-between mx-6 my-4">
+                        <div>
+                            <p class="text-[12px] text-[#00303C]">Deadline</p>
+                            <p class=" font-semibold text-[#00303C]">21 March 2025</p>
+                        </div>
+                        <button class="px-5 py-2 bg-[#3752FD] text-white rounded-lg">completed</button>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- active log section -->
-        <section class="bg-white h-[920px] w-[25%] rounded-xl">
+        <section class="bg-white h-[850px] w-[25%] rounded-xl mb-7">
             <div class="border-dashed border-b-2 flex flex-col items-center">
                 <div class="flex gap-2 my-6 items-center ">
                     <img class="h-6 w-6" src="./assets/activity.png" alt="">
@@ -51,8 +181,22 @@
                 </div>
                 <button class="px-5 py-3 mb-4 bg-[#3752FD] rounded-lg text-white">Clear History</button>
             </div>
+            <!-- task message -->
+            <div>
+                <p class="bg-[#F4F7FF] p-5 w-[90%] mx-auto rounded-lg mt-6">You have Complete The Task Add Dark Mode at
+                    12:48:15 PM</p>
+            </div>
         </section>
     </main>
+    <script>
+        let date = new Date();
+        let formatedDate = date.toDateString();
+        const todayDate = document.getElementById('today-date');
+        const newDateP = document.createElement('p');
+        newDateP.innerText = formatedDate;
+        // todayDate.append(newDateP)
+    </script>
+    <script src="./script/today.js"></script>
 </body>
 
 </html>
