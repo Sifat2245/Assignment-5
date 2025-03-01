@@ -26,6 +26,14 @@
         .date-bold {
             font-weight: 700;
         }
+        .message{
+            background-color: #F4F7FF;
+            padding: 20px;
+            width: 90%;
+            margin: auto;
+            border-radius: 8px;
+            margin-top: 24px;
+        }
     </style>
 </head>
 
@@ -80,7 +88,7 @@
             <!-- mid section -->
             <div class="mt-8 grid grid-cols-3 gap-8 mx-6 mb-7">
                 <!-- task container -->
-                <div class="bg-[#F4F7FF] rounded-lg">
+                <div class="task-card bg-[#F4F7FF] rounded-lg">
                     <div class="border-dashed border-b-2 mx-5">
                         <p class="px-4 py-2 w-28 ml-2 mt-4 bg-white rounded-lg">ShopEase</p>
                         <h1 class="text-[24px] font-semibold ml-2 mt-4">Fix Mobile Button Issue</h1>
@@ -95,7 +103,7 @@
                         <button class="complete-btn px-5 py-2 bg-[#3752FD] text-white rounded-lg hover:bg-[#2036ca]">completed</button>
                     </div>
                 </div>
-                <div class="bg-[#F4F7FF] rounded-lg">
+                <div class="task-card bg-[#F4F7FF] rounded-lg">
                     <div class="border-dashed border-b-2 mx-5">
                         <p class="px-4 py-2 w-28 ml-2 mt-4 bg-white rounded-lg">CloudSync</p>
                         <h1 class="text-[24px] font-semibold ml-2 mt-4">Add Dark Mode</h1>
@@ -109,7 +117,7 @@
                         <button class="complete-btn px-5 py-2 bg-[#3752FD] text-white rounded-lg hover:bg-[#2036ca]">completed</button>
                     </div>
                 </div>
-                <div class="bg-[#F4F7FF] rounded-lg">
+                <div class="task-card bg-[#F4F7FF] rounded-lg">
                     <div class="border-dashed border-b-2 mx-5">
                         <p class="px-4 py-2 w-24 ml-2 mt-4 bg-white rounded-lg">SwiftPay</p>
                         <h1 class="text-[24px] font-semibold ml-2 mt-4">Optimize  Home page</h1>
@@ -123,7 +131,7 @@
                         <button class="complete-btn px-5 py-2 bg-[#3752FD] text-white rounded-lg hover:bg-[#2036ca]">completed</button>
                     </div>
                 </div>
-                <div class="bg-[#F4F7FF] rounded-lg">
+                <div class="task-card bg-[#F4F7FF] rounded-lg">
                     <div class="border-dashed border-b-2 mx-5">
                         <p class="px-5 py-2 w-20 ml-2 mt-4 bg-white rounded-lg">Meta</p>
                         <h1 class="text-[24px] font-semibold ml-2 mt-4">Add new emoji 🤲</h1>
@@ -137,7 +145,7 @@
                         <button class="complete-btn px-5 py-2 bg-[#3752FD] text-white rounded-lg hover:bg-[#2036ca]">completed</button>
                     </div>
                 </div>
-                <div class="bg-[#F4F7FF] rounded-lg">
+                <div class="task-card bg-[#F4F7FF] rounded-lg">
                     <div class="border-dashed border-b-2 mx-5">
                         <p class="px-4 py-2 w-32 ml-2 mt-4 bg-white rounded-lg">Google LLC</p>
                         <h1 class="text-[24px] font-semibold ml-2 mt-4">Integrate OpenAI API </h1>
@@ -151,7 +159,7 @@
                         <button class="complete-btn px-5 py-2 bg-[#3752FD] text-white rounded-lg hover:bg-[#2036ca]">completed</button>
                     </div>
                 </div>
-                <div class="bg-[#F4F7FF] rounded-lg">
+                <div class="task-card bg-[#F4F7FF] rounded-lg">
                     <div class="border-dashed border-b-2 mx-5">
                         <p class="px-4 py-2 w-28 ml-2 mt-4 bg-white rounded-lg">Glassdoar</p>
                         <h1 class="text-[24px] font-semibold ml-2 mt-4">Improve Job searching </h1>
@@ -168,19 +176,18 @@
                 </div>
             </div>
         </section>
-        <!-- active log section -->
+        <!-- activity log section -->
         <section class="bg-white h-[850px] w-[25%] rounded-xl mb-7">
             <div class="border-dashed border-b-2 flex flex-col items-center">
                 <div class="flex gap-2 my-6 items-center ">
                     <img class="h-6 w-6" src="./assets/activity.png" alt="">
                     <h2 class="text-[20px]">Activity Log</h2>
                 </div>
-                <button class="px-5 py-3 mb-4 bg-[#3752FD] hover:bg-[#2036ca] rounded-lg text-white">Clear History</button>
+                <button id="clear-history-btn" class="px-5 py-3 mb-4 bg-[#3752FD] hover:bg-[#2036ca] rounded-lg text-white">Clear History</button>
             </div>
             <!-- task message -->
-            <div>
-                <p class="bg-[#F4F7FF] p-5 w-[90%] mx-auto rounded-lg mt-6">You have Complete The Task Add Dark Mode at
-                    12:48:15 PM</p>
+            <div id="task-message-container">
+              
             </div>
         </section>
     </main>
