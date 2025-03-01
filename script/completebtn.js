@@ -43,7 +43,21 @@ for (let i = 0; i < completeBtns.length; i++) {
     )
 }
 
-
-document.getElementById('clear-history-btn').addEventListener('click', function(){
+document.getElementById('clear-history-btn').addEventListener('click', function () {
     activityTaskContainer.innerHTML = '';
+})
+
+// random color in the body..
+
+document.getElementById('bg-theme').addEventListener('click', function () {
+
+    let randomNumber = Math.floor(Math.random() * 16777215);
+    let randomColor = '#' + randomNumber.toString(16);
+
+    document.body.style.backgroundColor = randomColor;
+})
+
+
+document.getElementById('discover-tab').addEventListener('click', function(){
+    window.location.href='./blog.html'
 })

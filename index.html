@@ -38,7 +38,7 @@
 </head>
 
 <body class="poppins-regular bg-[#F4F7FF] w-10/12 mx-auto">
-    <nav class="flex justify-between bg-white py-4 px-6 rounded-2xl mt-5">
+    <nav class="flex justify-between bg-white py-4 px-6 rounded-2xl mt-5 shadow-lg">
         <div class="flex gap-2 items-center">
             <img src="./assets/logo.png" alt="">
             <h1 class="text-3xl text-[#00303cc4]">Dev<span class="font-bold text-[#00303C]">Board</span></h1>
@@ -48,7 +48,7 @@
                 <img class="w-8 h-8" src="./assets/checkbox.png" alt="">
                 <h2 id="task-increased" class="font-bold text-3xl">23</h2>
             </div>
-            <div class="bg-[#F4F7FF] py-3 px-3 rounded-full">
+            <div id="bg-theme" class="bg-[#F4F7FF] py-3 px-3 rounded-full">
                 <img src="./assets/theme-btn.png" alt="">
             </div>
         </div>
@@ -68,7 +68,7 @@
                             <p class="text-2xl font-bold">0<span id="task-decreased">6</span></p>
                         </div>
                     </div>
-                    <div
+                    <div id="discover-tab"
                         class="flex gap-5 mb-8 pl-10 pr-48 rounded-lg items-center bg-gradient-to-r from-[#3953f8] to-[#9BA8F8]">
                         <img src="./assets/board.png" alt="">
                         <p class="text-[22px] text-white">Discover Something <br> New Today!</p>
@@ -86,7 +86,7 @@
 
             </div>
             <!-- mid section -->
-            <div class="mt-8 grid grid-cols-3 gap-8 mx-6 mb-7">
+            <div class="mt-8 grid grid-cols-3 gap-6 mx-6 mb-7">
                 <!-- task container -->
                 <div class="task-card bg-[#F4F7FF] rounded-lg">
                     <div class="border-dashed border-b-2 mx-5">
