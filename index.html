@@ -38,7 +38,7 @@
         <div class="flex gap-14 items-center">
             <div class="flex gap-3 bg-[#F4F7FF] py-3 px-5 rounded-full">
                 <img class="w-8 h-8" src="./assets/checkbox.png" alt="">
-                <h2 class="font-bold text-3xl">23</h2>
+                <h2 id="task-increased" class="font-bold text-3xl">23</h2>
             </div>
             <div class="bg-[#F4F7FF] py-3 px-3 rounded-full">
                 <img src="./assets/theme-btn.png" alt="">
@@ -57,21 +57,21 @@
                         </div>
                         <div>
                             <p>Task Assigned</p>
-                            <p class="text-2xl font-bold">05</p>
+                            <p class="text-2xl font-bold">0<span id="task-decreased">6</span></p>
                         </div>
                     </div>
                     <div
-                        class="flex gap-5 mb-8 pl-10 pr-40 rounded-lg items-center bg-gradient-to-r from-[#3953f8] to-[#9BA8F8]">
+                        class="flex gap-5 mb-8 pl-10 pr-48 rounded-lg items-center bg-gradient-to-r from-[#3953f8] to-[#9BA8F8]">
                         <img src="./assets/board.png" alt="">
-                        <p class="text-[20px] text-white">Discover Something <br> New Today!</p>
+                        <p class="text-[22px] text-white">Discover Something <br> New Today!</p>
                     </div>
-                    <div id="today-date" class="bg-[#F4F7FF] flex items-center px-9 gap-4 mb-8 rounded-lg">
+                    <div id="today-date" class="bg-[#F4F7FF] flex items-center px-9 mb-8 gap-1 rounded-lg">
                         <div class="py-3 px-3 rounded-full bg-white">
                             <img src="./assets/calender.png" alt="">
                         </div>
 
-                        <p class="date">Wed , <br>
-                            <span class="date-bold">Jul 28 2025 </span>
+                        <p class="date"> <br>
+                            <span class="date-bold"> </span>
                         </p>
                     </div>
                 </div>
@@ -92,7 +92,7 @@
                             <p class="text-[12px] text-[#00303C]">Deadline</p>
                             <p class=" font-semibold text-[#00303C]">21 March 2025</p>
                         </div>
-                        <button class="px-5 py-2 bg-[#3752FD] text-white rounded-lg">completed</button>
+                        <button class="complete-btn px-5 py-2 bg-[#3752FD] text-white rounded-lg hover:bg-[#2036ca]">completed</button>
                     </div>
                 </div>
                 <div class="bg-[#F4F7FF] rounded-lg">
@@ -106,7 +106,7 @@
                             <p class="text-[12px] text-[#00303C]">Deadline</p>
                             <p class=" font-semibold text-[#00303C]">21 March 2025</p>
                         </div>
-                        <button class="px-5 py-2 bg-[#3752FD] text-white rounded-lg">completed</button>
+                        <button class="complete-btn px-5 py-2 bg-[#3752FD] text-white rounded-lg hover:bg-[#2036ca]">completed</button>
                     </div>
                 </div>
                 <div class="bg-[#F4F7FF] rounded-lg">
@@ -120,7 +120,7 @@
                             <p class="text-[12px] text-[#00303C]">Deadline</p>
                             <p class=" font-semibold text-[#00303C]">21 March 2025</p>
                         </div>
-                        <button class="px-5 py-2 bg-[#3752FD] text-white rounded-lg">completed</button>
+                        <button class="complete-btn px-5 py-2 bg-[#3752FD] text-white rounded-lg hover:bg-[#2036ca]">completed</button>
                     </div>
                 </div>
                 <div class="bg-[#F4F7FF] rounded-lg">
@@ -134,7 +134,7 @@
                             <p class="text-[12px] text-[#00303C]">Deadline</p>
                             <p class=" font-semibold text-[#00303C]">21 March 2025</p>
                         </div>
-                        <button class="px-5 py-2 bg-[#3752FD] text-white rounded-lg">completed</button>
+                        <button class="complete-btn px-5 py-2 bg-[#3752FD] text-white rounded-lg hover:bg-[#2036ca]">completed</button>
                     </div>
                 </div>
                 <div class="bg-[#F4F7FF] rounded-lg">
@@ -148,7 +148,7 @@
                             <p class="text-[12px] text-[#00303C]">Deadline</p>
                             <p class=" font-semibold text-[#00303C]">21 March 2025</p>
                         </div>
-                        <button class="px-5 py-2 bg-[#3752FD] text-white rounded-lg">completed</button>
+                        <button class="complete-btn px-5 py-2 bg-[#3752FD] text-white rounded-lg hover:bg-[#2036ca]">completed</button>
                     </div>
                 </div>
                 <div class="bg-[#F4F7FF] rounded-lg">
@@ -163,7 +163,7 @@
                             <p class="text-[12px] text-[#00303C]">Deadline</p>
                             <p class=" font-semibold text-[#00303C]">21 March 2025</p>
                         </div>
-                        <button class="px-5 py-2 bg-[#3752FD] text-white rounded-lg">completed</button>
+                        <button class="complete-btn px-5 py-2 bg-[#3752FD] text-white rounded-lg hover:bg-[#2036ca]">completed</button>
                     </div>
                 </div>
             </div>
@@ -175,7 +175,7 @@
                     <img class="h-6 w-6" src="./assets/activity.png" alt="">
                     <h2 class="text-[20px]">Activity Log</h2>
                 </div>
-                <button class="px-5 py-3 mb-4 bg-[#3752FD] rounded-lg text-white">Clear History</button>
+                <button class="px-5 py-3 mb-4 bg-[#3752FD] hover:bg-[#2036ca] rounded-lg text-white">Clear History</button>
             </div>
             <!-- task message -->
             <div>
@@ -185,14 +185,11 @@
         </section>
     </main>
     <script>
-        let date = new Date();
-        let formatedDate = date.toDateString();
-        const todayDate = document.getElementById('today-date');
-        const newDateP = document.createElement('p');
-        newDateP.innerText = formatedDate;
-        // todayDate.append(newDateP)
+        
+        
     </script>
     <script src="./script/today.js"></script>
+    <script src="./script/completebtn.js"></script>
 </body>
 
 </html>
