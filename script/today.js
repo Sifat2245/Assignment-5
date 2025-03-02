@@ -1,8 +1,8 @@
 let date = new Date();
-let formatedDate = date.toDateString();
-const todayDate = document.getElementById('today-date');
-const newDateP = document.createElement('p');
-newDateP.innerText = formatedDate;
-todayDate.append(newDateP)
-newDateP.style.fontSize = "20px"
-newDateP.style.fontWeight = "700"
+const weekDay = date.toLocaleDateString('en-US', {weekday: 'short'})
+const month = date.toLocaleDateString('en-US', {month: 'short'})
+const day = date.getDate().toString().padStart(2, '0');
+const year = date.getFullYear();
+
+document.getElementById('weekday').innerText = weekDay + ',';
+document.getElementById('date').innerText = `${month} ${day} ${year}`;

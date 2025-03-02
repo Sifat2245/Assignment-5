@@ -19,12 +19,15 @@
             font-style: normal;
         }
 
-        .date {
+        .weekdays {
             font-size: 20px;
+            color: #00303C;
         }
 
-        .date-bold {
+        .dates {
             font-weight: 700;
+            font-size: 20px;
+            color: #00303C;
         }
         .message{
             background-color: #F4F7FF;
@@ -73,14 +76,15 @@
                         <img src="./assets/board.png" alt="">
                         <p class="text-[22px] text-white">Discover Something <br> New Today!</p>
                     </div>
-                    <div id="today-date" class="bg-[#F4F7FF] flex items-center px-9 mb-8 gap-1 rounded-lg">
+                    <div id="today-date" class="bg-[#F4F7FF] flex items-center px-9 mb-8 gap-2 rounded-lg">
                         <div class="py-3 px-3 rounded-full bg-white">
                             <img src="./assets/calender.png" alt="">
                         </div>
 
-                        <p class="date"> <br>
-                            <span class="date-bold"> </span>
-                        </p>
+                       <div class="date-container">
+                        <span id="weekday" class="weekdays"></span><br>
+                        <span id="date" class="dates"></span>
+                       </div>
                     </div>
                 </div>
 
