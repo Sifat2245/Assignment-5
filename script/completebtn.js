@@ -22,6 +22,8 @@ for (let i = 0; i < completeBtns.length; i++) {
 
         completeBtn.setAttribute('disabled', true);
         completeBtn.style.backgroundColor = '#a2adf5'
+        completeBtn.innerText = `Completed`
+        
         if (countedDecrease === 0) {
             alert('congrats!!! You have completed all the current task')
         }
